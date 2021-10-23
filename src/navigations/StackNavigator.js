@@ -1,6 +1,6 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-
+import { Button } from "react-native";
 import DrawerNavigator from "./DrawerNavigator";
 
 import Login from "../screens/Login";
@@ -33,12 +33,22 @@ const screenOptionStyle = {
     },
     headerTintColor: "white",
     headerBackTitle: "Back",
-    headerShown:true
+    headerShown:true,
+    headerLeft: () => (
+      <Button
+        onPress={() => alert('This is a button!')}
+        title="Info"
+        color="#fff"
+      />)
+
 };
 
 const LoginStackNavigator = () => {
     return (
-      <Stack.Navigator  screenOptions={{headerShown:false,  headerLeft:null}}  >
+      <Stack.Navigator  
+        screenOptions={{
+          headerShown:false
+          }}  >
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Drawer" options={{ headerShown:false }}  component={DrawerNavigator} />
       </Stack.Navigator>
