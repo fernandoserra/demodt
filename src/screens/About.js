@@ -1,12 +1,15 @@
-import React from "react";
+import React, {useContext} from "react";
 import { View, StyleSheet, Text } from "react-native";
-
+import themeContext from "../context/themeContext";
 const About = () => {
-  return (
-    <View style={styles.center}>
-      <Text>This is the about screen</Text>
-    </View>
-  );
+
+    const theme = useContext(themeContext)
+
+    return (
+        <View style={[styles.center, {backgroundColor:theme.background}]}>
+            <Text>This is the about screen</Text>
+        </View>
+    );
 };
 
 const styles = StyleSheet.create({
