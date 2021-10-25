@@ -1,24 +1,34 @@
-import React from "react";
+import React, { useContext } from "react";
 import { View, Button, Text, StyleSheet } from "react-native";
 
 import { NavigationAction, StackActions } from "@react-navigation/routers";
-
-
 import { CommonActions } from '@react-navigation/native';
+
+import themeContext from "../context/themeContext";
+//import styl from "../styles/styles";
+
+import { stylesPerson } from "../styles/styles";
+
 
 
 const Home = ({ navigation }) => {
 
+    const theme = useContext(themeContext)
 
-return (
-    <View style={styles.center}>
-      <Text>This is the home screen</Text>
-      <Button 
-        title="Go to About Screen" 
-        onPress={() => navigation.navigate("About")}
-        />
-    </View>
-  );
+    console.log("==========")
+    console.log(theme)
+    console.log(theme.color)
+    console.log("==========")
+
+    return (
+        <View style={[styles.center, {backgroundColor:theme.background}]}>
+        <Text style={stylesPerson(theme).largeButtonText}>This is the home screen</Text>
+        <Button 
+            title="Go to About Screen" 
+            onPress={() => navigation.navigate("About")}
+            />
+        </View>
+    );
 };
 
 

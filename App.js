@@ -5,13 +5,21 @@ import { MainStackNavigator } from "./src/navigations/StackNavigator";
 import BottomTabNavigator from "./src/navigations/TabNavigator";
 import DrawerNavigator from "./src/navigations/DrawerNavigator";
 import { LoginStackNavigator } from "./src/navigations/StackNavigator";
- const App = () => {
+
+import theme from "./src/styles/theme.style";
+import themeContext from "./src/context/themeContext";
+
+
+
+const App = () => {
   return (
-    <NavigationContainer theme={DarkTheme}>
-      <LoginStackNavigator/>
-    </NavigationContainer>
+    <themeContext.Provider value={theme.ligth}>
+      <NavigationContainer>
+        <LoginStackNavigator/>
+      </NavigationContainer>
+    </themeContext.Provider>
   );
-  //
+  // <NavigationContainer theme={DarkTheme}>
   ////<MainStackNavigator />
 }
 export default App;
