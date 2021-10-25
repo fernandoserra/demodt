@@ -29,16 +29,16 @@ const Stack = createStackNavigator();
 
 const screenOptionStyle = {
     headerStyle: {
-      backgroundColor: "#9AC4F8",
+      //backgroundColor: "#9AC4F8",
     },
-    headerTintColor: "white",
+    headerTintColor: "blue",
     headerBackTitle: "Back",
     headerShown:true,
     headerLeft: () => (
       <Button
         onPress={() => alert('This is a button!')}
         title="Info"
-        color="#fff"
+        color="blue"
       />)
 
 };
