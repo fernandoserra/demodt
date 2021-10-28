@@ -7,7 +7,7 @@ const About = () => {
 
     return (
         <View style={[styles.center, {backgroundColor:theme.background}]}>
-            <Text>This is the about screen</Text>
+            <Text style={{ fontFamily:'Roboto-Bold'}}>This is the about screen</Text>
         </View>
     );
 };

@@ -11,9 +11,21 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		16A6866E9426C50D149B788C /* libPods-demodt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF318B3978CCB89DFD2669F /* libPods-demodt.a */; };
+		2A1A99255AE9484F9783AD71 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4E1753091354980AE200899 /* Roboto-MediumItalic.ttf */; };
+		4192121EB6F44A41983745E1 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15BE7D40349144BE8F749710 /* Roboto-LightItalic.ttf */; };
+		5C5C147038224BF6929BBEB2 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96337D9E8A564301B7291E19 /* Roboto-Light.ttf */; };
+		5FF13E23275247D3951634A8 /* RobotoBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A20C84A3103D4ADC876A789F /* RobotoBlack.ttf */; };
+		61C0E0EEF67B4D5685D95AE9 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A254F69AC8D044929900857E /* Roboto-BlackItalic.ttf */; };
+		6A09196042274CB0AB079728 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F28BB613CF7643CCBA8414AD /* Roboto-Thin.ttf */; };
+		6F015E29CDB307D8BA0D5827 /* libPods-demodt-demodtTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01EFE2ADB41E32BB23987275 /* libPods-demodt-demodtTests.a */; };
+		7CB3E0F6F48C483289300FD2 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAB928DEBA8A429188FD985D /* Roboto-ThinItalic.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		8675D1C6F84B38979AAA700D /* libPods-demodt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F6C2E908EEDACC6A9AE0AB3 /* libPods-demodt.a */; };
-		A52D5C16EDE5DE94F5C6E080 /* libPods-demodt-demodtTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E15FC1BFA3B9B6447F41ED8 /* libPods-demodt-demodtTests.a */; };
+		BF83B07CDF914F7A9928C83A /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B608A4AD0360450094D1386D /* Roboto-BoldItalic.ttf */; };
+		C3B85C6CF52E4FA9A28DCCCA /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A532E83BC5AC4E9C8AC55636 /* Roboto-Medium.ttf */; };
+		C5B8BAD37EF645A0A09C82F6 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60D29ACDE0674F7D88AF050E /* Roboto-Regular.ttf */; };
+		E7AE855C57494EC3819A3CB8 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02DC39417A2542418ED875EB /* Roboto-Bold.ttf */; };
+		F62551AFC4494B4FAF602BD0 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF9C531202C14334A3E2E730 /* Roboto-Italic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,20 +42,32 @@
 		00E356EE1AD99517003FC87E /* demodtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = demodtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* demodtTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = demodtTests.m; sourceTree = "<group>"; };
+		01EFE2ADB41E32BB23987275 /* libPods-demodt-demodtTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-demodt-demodtTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02DC39417A2542418ED875EB /* Roboto-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Bold.ttf"; path = "../assets/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		0AF318B3978CCB89DFD2669F /* libPods-demodt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-demodt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* demodt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demodt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = demodt/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = demodt/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = demodt/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = demodt/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = demodt/main.m; sourceTree = "<group>"; };
-		4F6C2E908EEDACC6A9AE0AB3 /* libPods-demodt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-demodt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E15FC1BFA3B9B6447F41ED8 /* libPods-demodt-demodtTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-demodt-demodtTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15BE7D40349144BE8F749710 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-LightItalic.ttf"; path = "../assets/fonts/Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		60D29ACDE0674F7D88AF050E /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		6EEBA6AEC8AE3716A9A16791 /* Pods-demodt-demodtTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demodt-demodtTests.debug.xcconfig"; path = "Target Support Files/Pods-demodt-demodtTests/Pods-demodt-demodtTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = demodt/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8A2FBDD1673751EAB01AB434 /* Pods-demodt-demodtTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demodt-demodtTests.release.xcconfig"; path = "Target Support Files/Pods-demodt-demodtTests/Pods-demodt-demodtTests.release.xcconfig"; sourceTree = "<group>"; };
-		A49ECDA9B5AB02D060B0A168 /* Pods-demodt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demodt.release.xcconfig"; path = "Target Support Files/Pods-demodt/Pods-demodt.release.xcconfig"; sourceTree = "<group>"; };
-		EBF335415F18718E681AE88E /* Pods-demodt-demodtTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demodt-demodtTests.debug.xcconfig"; path = "Target Support Files/Pods-demodt-demodtTests/Pods-demodt-demodtTests.debug.xcconfig"; sourceTree = "<group>"; };
+		96337D9E8A564301B7291E19 /* Roboto-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Light.ttf"; path = "../assets/fonts/Roboto-Light.ttf"; sourceTree = "<group>"; };
+		A20C84A3103D4ADC876A789F /* RobotoBlack.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = RobotoBlack.ttf; path = ../assets/fonts/RobotoBlack.ttf; sourceTree = "<group>"; };
+		A254F69AC8D044929900857E /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BlackItalic.ttf"; path = "../assets/fonts/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		A532E83BC5AC4E9C8AC55636 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		B608A4AD0360450094D1386D /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BoldItalic.ttf"; path = "../assets/fonts/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		B694C50AD5F0332ECD0DD60F /* Pods-demodt-demodtTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demodt-demodtTests.release.xcconfig"; path = "Target Support Files/Pods-demodt-demodtTests/Pods-demodt-demodtTests.release.xcconfig"; sourceTree = "<group>"; };
+		BF36D722384183D8AD7390DC /* Pods-demodt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demodt.debug.xcconfig"; path = "Target Support Files/Pods-demodt/Pods-demodt.debug.xcconfig"; sourceTree = "<group>"; };
+		CF9C531202C14334A3E2E730 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Italic.ttf"; path = "../assets/fonts/Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		E4E1753091354980AE200899 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-MediumItalic.ttf"; path = "../assets/fonts/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F1516681A6704308E85EF2A6 /* Pods-demodt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demodt.debug.xcconfig"; path = "Target Support Files/Pods-demodt/Pods-demodt.debug.xcconfig"; sourceTree = "<group>"; };
+		F28BB613CF7643CCBA8414AD /* Roboto-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Thin.ttf"; path = "../assets/fonts/Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		FAB928DEBA8A429188FD985D /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-ThinItalic.ttf"; path = "../assets/fonts/Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		FFB6CD77CEF937565D5783AC /* Pods-demodt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demodt.release.xcconfig"; path = "Target Support Files/Pods-demodt/Pods-demodt.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A52D5C16EDE5DE94F5C6E080 /* libPods-demodt-demodtTests.a in Frameworks */,
+				6F015E29CDB307D8BA0D5827 /* libPods-demodt-demodtTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8675D1C6F84B38979AAA700D /* libPods-demodt.a in Frameworks */,
+				16A6866E9426C50D149B788C /* libPods-demodt.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +107,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0EE7E1EC038C41BF9F5F3867 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A254F69AC8D044929900857E /* Roboto-BlackItalic.ttf */,
+				02DC39417A2542418ED875EB /* Roboto-Bold.ttf */,
+				B608A4AD0360450094D1386D /* Roboto-BoldItalic.ttf */,
+				CF9C531202C14334A3E2E730 /* Roboto-Italic.ttf */,
+				96337D9E8A564301B7291E19 /* Roboto-Light.ttf */,
+				15BE7D40349144BE8F749710 /* Roboto-LightItalic.ttf */,
+				A532E83BC5AC4E9C8AC55636 /* Roboto-Medium.ttf */,
+				E4E1753091354980AE200899 /* Roboto-MediumItalic.ttf */,
+				60D29ACDE0674F7D88AF050E /* Roboto-Regular.ttf */,
+				F28BB613CF7643CCBA8414AD /* Roboto-Thin.ttf */,
+				FAB928DEBA8A429188FD985D /* Roboto-ThinItalic.ttf */,
+				A20C84A3103D4ADC876A789F /* RobotoBlack.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		13B07FAE1A68108700A75B9A /* demodt */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,22 +143,10 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				4F6C2E908EEDACC6A9AE0AB3 /* libPods-demodt.a */,
-				7E15FC1BFA3B9B6447F41ED8 /* libPods-demodt-demodtTests.a */,
+				0AF318B3978CCB89DFD2669F /* libPods-demodt.a */,
+				01EFE2ADB41E32BB23987275 /* libPods-demodt-demodtTests.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7C564DA1638D2C97C9D1536C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F1516681A6704308E85EF2A6 /* Pods-demodt.debug.xcconfig */,
-				A49ECDA9B5AB02D060B0A168 /* Pods-demodt.release.xcconfig */,
-				EBF335415F18718E681AE88E /* Pods-demodt-demodtTests.debug.xcconfig */,
-				8A2FBDD1673751EAB01AB434 /* Pods-demodt-demodtTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -133,7 +164,8 @@
 				00E356EF1AD99517003FC87E /* demodtTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				7C564DA1638D2C97C9D1536C /* Pods */,
+				0EE7E1EC038C41BF9F5F3867 /* Resources */,
+				F59D92FF62ABB8969457BE88 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -149,6 +181,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		F59D92FF62ABB8969457BE88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF36D722384183D8AD7390DC /* Pods-demodt.debug.xcconfig */,
+				FFB6CD77CEF937565D5783AC /* Pods-demodt.release.xcconfig */,
+				6EEBA6AEC8AE3716A9A16791 /* Pods-demodt-demodtTests.debug.xcconfig */,
+				B694C50AD5F0332ECD0DD60F /* Pods-demodt-demodtTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,12 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "demodtTests" */;
 			buildPhases = (
-				853F6A081FF43138E475647D /* [CP] Check Pods Manifest.lock */,
+				93863407D34F69E4F258E13A /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				04762B92F753E75D78819BA4 /* [CP] Embed Pods Frameworks */,
-				27F9E4F9DD0175C39FB3B5B2 /* [CP] Copy Pods Resources */,
+				50AE3FB271F6FA8BD37830D4 /* [CP] Embed Pods Frameworks */,
+				9F0CC0B33990E1F581EFB226 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,14 +220,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "demodt" */;
 			buildPhases = (
-				8624C85CA8AE76CBD4F3582C /* [CP] Check Pods Manifest.lock */,
+				38246FDE633DA37B97E41F8B /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				2DF3C31D1331BBF7560FF213 /* [CP] Embed Pods Frameworks */,
-				16DFE4F5F75BC6F84C533AE7 /* [CP] Copy Pods Resources */,
+				E6A0FEF3492A9EA4EC5D5958 /* [CP] Embed Pods Frameworks */,
+				5440B6498ED29B725511A0CA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,6 +288,18 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				61C0E0EEF67B4D5685D95AE9 /* Roboto-BlackItalic.ttf in Resources */,
+				E7AE855C57494EC3819A3CB8 /* Roboto-Bold.ttf in Resources */,
+				BF83B07CDF914F7A9928C83A /* Roboto-BoldItalic.ttf in Resources */,
+				F62551AFC4494B4FAF602BD0 /* Roboto-Italic.ttf in Resources */,
+				5C5C147038224BF6929BBEB2 /* Roboto-Light.ttf in Resources */,
+				4192121EB6F44A41983745E1 /* Roboto-LightItalic.ttf in Resources */,
+				C3B85C6CF52E4FA9A28DCCCA /* Roboto-Medium.ttf in Resources */,
+				2A1A99255AE9484F9783AD71 /* Roboto-MediumItalic.ttf in Resources */,
+				C5B8BAD37EF645A0A09C82F6 /* Roboto-Regular.ttf in Resources */,
+				6A09196042274CB0AB079728 /* Roboto-Thin.ttf in Resources */,
+				7CB3E0F6F48C483289300FD2 /* Roboto-ThinItalic.ttf in Resources */,
+				5FF13E23275247D3951634A8 /* RobotoBlack.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +320,29 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		04762B92F753E75D78819BA4 /* [CP] Embed Pods Frameworks */ = {
+		38246FDE633DA37B97E41F8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-demodt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50AE3FB271F6FA8BD37830D4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -282,7 +359,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-demodt-demodtTests/Pods-demodt-demodtTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		16DFE4F5F75BC6F84C533AE7 /* [CP] Copy Pods Resources */ = {
+		5440B6498ED29B725511A0CA /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -299,41 +376,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-demodt/Pods-demodt-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		27F9E4F9DD0175C39FB3B5B2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-demodt-demodtTests/Pods-demodt-demodtTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-demodt-demodtTests/Pods-demodt-demodtTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-demodt-demodtTests/Pods-demodt-demodtTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2DF3C31D1331BBF7560FF213 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-demodt/Pods-demodt-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-demodt/Pods-demodt-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-demodt/Pods-demodt-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		853F6A081FF43138E475647D /* [CP] Check Pods Manifest.lock */ = {
+		93863407D34F69E4F258E13A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -355,26 +398,38 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8624C85CA8AE76CBD4F3582C /* [CP] Check Pods Manifest.lock */ = {
+		9F0CC0B33990E1F581EFB226 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-demodt-demodtTests/Pods-demodt-demodtTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-demodt-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-demodt-demodtTests/Pods-demodt-demodtTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-demodt-demodtTests/Pods-demodt-demodtTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6A0FEF3492A9EA4EC5D5958 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-demodt/Pods-demodt-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-demodt/Pods-demodt-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-demodt/Pods-demodt-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -429,7 +484,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBF335415F18718E681AE88E /* Pods-demodt-demodtTests.debug.xcconfig */;
+			baseConfigurationReference = 6EEBA6AEC8AE3716A9A16791 /* Pods-demodt-demodtTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -456,7 +511,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A2FBDD1673751EAB01AB434 /* Pods-demodt-demodtTests.release.xcconfig */;
+			baseConfigurationReference = B694C50AD5F0332ECD0DD60F /* Pods-demodt-demodtTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -480,7 +535,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1516681A6704308E85EF2A6 /* Pods-demodt.debug.xcconfig */;
+			baseConfigurationReference = BF36D722384183D8AD7390DC /* Pods-demodt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -506,7 +561,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A49ECDA9B5AB02D060B0A168 /* Pods-demodt.release.xcconfig */;
+			baseConfigurationReference = FFB6CD77CEF937565D5783AC /* Pods-demodt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
