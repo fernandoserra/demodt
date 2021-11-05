@@ -9,6 +9,8 @@ import themeContext from "../context/themeContext";
 
 import { stylesPerson } from "../styles/styles";
 
+import PushNotification from "react-native-push-notification";
+
 
 
 const Home = ({ navigation }) => {
@@ -22,14 +24,39 @@ const Home = ({ navigation }) => {
 
     return (
         <View style={[styles.center, {backgroundColor:theme.background}]}>
-        <Text style={stylesPerson(theme).largeButtonText}>This is the home screen</Text>
+        <Text style={stylesPerson(theme).largeButtonText}>This is the home screen...</Text>
         <Button 
             title="Go to About Screen" 
             onPress={() => navigation.navigate("About")}
             />
+
+          <Button 
+            title="Notificación" 
+            onPress={() => handleNotification()}
+            />
         </View>
     );
 };
+
+const handleNotification = () =>{
+  console.log("Ejecutando handleNotification")
+  PushNotification.localNotification({
+    channelId: "test-channel",
+    title:"You click on ",
+    message: "Esta es la prueba de un mensaje",
+    bigText:"Demo de bigText...",
+    color:'blue'
+  });
+
+  PushNotification.localNotificationSchedule({
+    channelId: "test-channel",
+    title:"Alarma ",
+    message: "Esta es la prueba de un mensaje de la alarma",
+    date: new Date(Date.now() +  20*1000) ,
+    allowWhileIdle:true,
+  });
+
+}
 
 
 Home.navigationOptions={

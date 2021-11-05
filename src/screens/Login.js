@@ -1,7 +1,13 @@
 import { StackActions } from "@react-navigation/routers";
-import React from "react";
+import React, {Component, useState, useContext, useEffect} from "react";
 import { View, Button, StyleSheet, Text } from "react-native";
 import { CommonActions } from "@react-navigation/native";
+
+import PushNotification from "react-native-push-notification";
+
+	useEffect(()=>{
+		createChannels();
+	},[]);
 
 const Login = ({navigation}) => {
   return (
@@ -32,6 +38,16 @@ const redirect = (navigation)=>{
     });
 
 
+}
+
+
+const createChannels = () =>{
+	PushNotification.createChannel(
+		{
+			channelId: "test-channel",
+			channelName: "Test Channel"
+		}
+	)
 }
 
 const styles = StyleSheet.create({
