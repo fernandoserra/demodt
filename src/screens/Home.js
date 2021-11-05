@@ -11,6 +11,9 @@ import { stylesPerson } from "../styles/styles";
 
 import PushNotification from "react-native-push-notification";
 
+import PushNotificationIOS from '@react-native-community/push-notification-ios';
+
+
 
 
 const Home = ({ navigation }) => {
@@ -40,21 +43,31 @@ const Home = ({ navigation }) => {
 
 const handleNotification = () =>{
   console.log("Ejecutando handleNotification")
-  PushNotification.localNotification({
+
+  PushNotificationIOS.presentLocalNotification({
+      alertTitle:'titulo de ejemplo',
+      alertBody:'Mensaje de ejemplo'
+  })
+
+  //Funcionando
+ /* PushNotification.localNotification({
     channelId: "test-channel",
     title:"You click on ",
     message: "Esta es la prueba de un mensaje",
     bigText:"Demo de bigText...",
     color:'blue'
-  });
+  });*/
 
-  PushNotification.localNotificationSchedule({
+  //Funcionando
+ /* PushNotification.localNotificationSchedule({
     channelId: "test-channel",
     title:"Alarma ",
     message: "Esta es la prueba de un mensaje de la alarma",
     date: new Date(Date.now() +  20*1000) ,
     allowWhileIdle:true,
   });
+
+  */
 
 }
 

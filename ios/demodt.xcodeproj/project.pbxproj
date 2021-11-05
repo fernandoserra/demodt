@@ -59,6 +59,7 @@
 		A20C84A3103D4ADC876A789F /* RobotoBlack.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = RobotoBlack.ttf; path = ../assets/fonts/RobotoBlack.ttf; sourceTree = "<group>"; };
 		A254F69AC8D044929900857E /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BlackItalic.ttf"; path = "../assets/fonts/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
 		A532E83BC5AC4E9C8AC55636 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		B3AD26B72735940900BF4D8D /* demodt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = demodt.entitlements; path = demodt/demodt.entitlements; sourceTree = "<group>"; };
 		B608A4AD0360450094D1386D /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BoldItalic.ttf"; path = "../assets/fonts/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
 		B694C50AD5F0332ECD0DD60F /* Pods-demodt-demodtTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demodt-demodtTests.release.xcconfig"; path = "Target Support Files/Pods-demodt-demodtTests/Pods-demodt-demodtTests.release.xcconfig"; sourceTree = "<group>"; };
 		BF36D722384183D8AD7390DC /* Pods-demodt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demodt.debug.xcconfig"; path = "Target Support Files/Pods-demodt/Pods-demodt.debug.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +130,7 @@
 		13B07FAE1A68108700A75B9A /* demodt */ = {
 			isa = PBXGroup;
 			children = (
+				B3AD26B72735940900BF4D8D /* demodt.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -539,6 +541,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = demodt/demodt.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = demodt/Info.plist;
@@ -565,6 +568,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = demodt/demodt.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = demodt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
