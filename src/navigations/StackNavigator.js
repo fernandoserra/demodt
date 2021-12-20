@@ -7,6 +7,7 @@ import Login from "../screens/Login";
 import Home  from "../screens/Home";
 import About from "../screens/About";
 import Contact from "../screens/Contact";
+import Animations from "../screens/Animations";
 
 const Stack = createStackNavigator();
 
@@ -71,6 +72,14 @@ const ContactStackNavigator = () => {
       </Stack.Navigator>
     );
 }
+
+const AnimationStackNavigator = () => {
+  return (
+    <Stack.Navigator screenOptions={screenOptionStyle}>
+      <Stack.Screen name="Animations" component={Animations} />
+    </Stack.Navigator>
+  );
+}
   
 
-export { LoginStackNavigator,MainStackNavigator,ContactStackNavigator };
+export { LoginStackNavigator,MainStackNavigator,ContactStackNavigator,AnimationStackNavigator };
