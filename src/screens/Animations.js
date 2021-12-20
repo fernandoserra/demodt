@@ -1,5 +1,6 @@
 import React from "react";
 import { View, StyleSheet, Text, FlatList } from "react-native";
+import * as Animatable from 'react-native-animatable';
 
 const Animations = (() => {
 
@@ -38,14 +39,19 @@ const Animations = (() => {
         { id: 31, name: "Pancho", phone: "+12-1212121212" }
     ]
 
-    renderItem=({item,index})=>{
+    renderItem = ({ item, index }) => {
         //let {itemStyle,itemText} =styles; 
-        return(
-          <View style={styles.item}>
-            <Text style={styles.itemText}>{item.name}</Text>
-          </View>
+        return (
+
+            <Animatable.View
+                animation="fadeIn"
+                //duration={700}
+                delay={index * 300}
+                style={styles.item}>
+                <Text style={styles.itemText}>{item.name}</Text>
+            </Animatable.View>
         );
-      };
+    };
 
     return (
 
@@ -65,16 +71,16 @@ const styles = StyleSheet.create({
     container: {
         flex: 1
     },
-    item:{
-        backgroundColor:'#ddd',
-        borderRadius:5,
-        margin:8,
-        padding:8,
-        borderColor:'#525558',
-        borderWidth:0.2
+    item: {
+        backgroundColor: '#ddd',
+        borderRadius: 5,
+        margin: 8,
+        padding: 8,
+        borderColor: '#525558',
+        borderWidth: 0.2
     },
-    itemText:{
-        fontSize:16
+    itemText: {
+        fontSize: 16
     }
 });
 
