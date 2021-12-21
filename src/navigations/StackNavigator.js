@@ -9,6 +9,7 @@ import About from "../screens/About";
 import Contact from "../screens/Contact";
 import Animations from "../screens/Animations";
 import DemoHeader from "../screens/DemoHeader";
+import VideoScreen from "../screens/VideoScreen";
 
 const Stack = createStackNavigator();
 
@@ -98,6 +99,15 @@ const DemoHeaderStackNavigator = () => {
     </Stack.Navigator>
   );
 }
-  
+ 
+const VideoStackNavigator = () => {
+  return (
+    <Stack.Navigator screenOptions={screenOptionStyle}>
+      <Stack.Screen name="VideoScreen" component={VideoScreen} />
+    </Stack.Navigator>
+  );
+}
+ 
 
-export { LoginStackNavigator,MainStackNavigator,ContactStackNavigator,AnimationStackNavigator,DemoHeaderStackNavigator };
+
+export { LoginStackNavigator,MainStackNavigator,ContactStackNavigator,AnimationStackNavigator,DemoHeaderStackNavigator,VideoStackNavigator };
