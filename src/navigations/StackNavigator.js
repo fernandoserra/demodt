@@ -45,6 +45,15 @@ const screenOptionStyle = {
 
 };
 
+const screenOptionStyle2 = {
+  headerStyle: {
+    //backgroundColor: "#9AC4F8",
+  },
+  headerTintColor: "blue",
+  headerBackTitle: "Back",
+  headerShown:false
+};
+
 const LoginStackNavigator = () => {
     return (
       <Stack.Navigator  
@@ -84,7 +93,7 @@ const AnimationStackNavigator = () => {
 
 const DemoHeaderStackNavigator = () => {
   return (
-    <Stack.Navigator screenOptions={screenOptionStyle}>
+    <Stack.Navigator screenOptions={screenOptionStyle2}>
       <Stack.Screen name="DemoHeader" component={DemoHeader} />
     </Stack.Navigator>
   );
