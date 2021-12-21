@@ -8,6 +8,7 @@ import Home  from "../screens/Home";
 import About from "../screens/About";
 import Contact from "../screens/Contact";
 import Animations from "../screens/Animations";
+import DemoHeader from "../screens/DemoHeader";
 
 const Stack = createStackNavigator();
 
@@ -80,6 +81,14 @@ const AnimationStackNavigator = () => {
     </Stack.Navigator>
   );
 }
+
+const DemoHeaderStackNavigator = () => {
+  return (
+    <Stack.Navigator screenOptions={screenOptionStyle}>
+      <Stack.Screen name="DemoHeader" component={DemoHeader} />
+    </Stack.Navigator>
+  );
+}
   
 
-export { LoginStackNavigator,MainStackNavigator,ContactStackNavigator,AnimationStackNavigator };
+export { LoginStackNavigator,MainStackNavigator,ContactStackNavigator,AnimationStackNavigator,DemoHeaderStackNavigator };
