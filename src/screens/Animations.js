@@ -1,5 +1,6 @@
 import React from "react";
 import { View, StyleSheet, Text, FlatList } from "react-native";
+//https://github.com/oblador/react-native-animatable
 import * as Animatable from 'react-native-animatable';
 
 const Animations = (() => {
