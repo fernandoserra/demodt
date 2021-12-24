@@ -22,13 +22,11 @@ const About = () => {
 				</MapView>
 			</View>
 		</View>
-
 		/*
 			<View style={[styles.center, {backgroundColor:theme.background}]}>
 				<Text style={{ fontFamily:'Roboto-Bold'}}>This is the about screen</Text>
 			</View>
 		*/
-
 	);
 };
 
