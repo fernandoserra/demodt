@@ -5,7 +5,6 @@ import * as Animatable from 'react-native-animatable';
 
 const Animations = (() => {
 
-
     const data = [
         { id: 1, name: "Pedro", phone: "+11-111111111" },
         { id: 2, name: "Carmen", phone: "+22-222222222" },
@@ -43,7 +42,6 @@ const Animations = (() => {
     renderItem = ({ item, index }) => {
         //let {itemStyle,itemText} =styles; 
         return (
-
             <Animatable.View
                 animation="fadeIn"
                 //duration={700}
@@ -55,14 +53,12 @@ const Animations = (() => {
     };
 
     return (
-
         <View style={styles.container}>
             <FlatList
                 data={data}
                 renderItem={this.renderItem}
             />
         </View>
-
     );
 
 });
