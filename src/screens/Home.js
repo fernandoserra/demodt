@@ -1,25 +1,16 @@
 import React, { useContext } from "react";
 import { View, Button, Text, StyleSheet } from "react-native";
-
 import { NavigationAction, StackActions } from "@react-navigation/routers";
 import { CommonActions } from '@react-navigation/native';
-
 import themeContext from "../context/themeContext";
 //import styl from "../styles/styles";
-
 import { stylesPerson } from "../styles/styles";
-
 import PushNotification from "react-native-push-notification";
-
 import PushNotificationIOS from '@react-native-community/push-notification-ios';
-
-
-
 
 const Home = ({ navigation }) => {
 
     const theme = useContext(themeContext)
-
     console.log("==========")
     console.log(theme)
     console.log(theme.color)
@@ -66,18 +57,14 @@ const handleNotification = () =>{
     date: new Date(Date.now() +  20*1000) ,
     allowWhileIdle:true,
   });
-
   */
 
 }
-
 
 Home.navigationOptions={
     title:'Tracks',
     headerLeft: null, 
 }
-
-
 
 const styles = StyleSheet.create({
   center: {
