@@ -4,9 +4,7 @@ import themeContext from "../context/themeContext";
 import { WebView } from 'react-native-webview';
 
 const VideoScreen = () => {
-
     const theme = useContext(themeContext)
-
     return (
 
         <WebView
@@ -16,12 +14,10 @@ const VideoScreen = () => {
             }}
             javaScriptEnabled={true}
         />
-
     );
 };
 
 const styles = StyleSheet.create({
-
 });
 
 export default VideoScreen;
