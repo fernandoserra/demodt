@@ -36,8 +36,6 @@ const redirect = (navigation)=>{
     navigation.reset({
         routes: [{ name: "Drawer" }]
     });
-
-
 }
 
 
