@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { View, StyleSheet, Text } from "react-native";
 import themeContext from "../context/themeContext";
-
 import MapView, { Polyline } from "react-native-maps";
 const About = () => {
 
@@ -9,7 +8,6 @@ const About = () => {
 
 	return (
 		<View>
-
 			<View style={styles.container_other}>
 				<MapView
 					initialRegion={{
@@ -21,12 +19,9 @@ const About = () => {
 					}}
 					style={styles.map}
 				>
-
 				</MapView>
-
 			</View>
 		</View>
-
 
 		/*
 			<View style={[styles.center, {backgroundColor:theme.background}]}>
