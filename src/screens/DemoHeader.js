@@ -6,7 +6,6 @@ import { Button, Overlay } from 'react-native-elements';
 const DemoHeader = () => {
 
     const theme = useContext(themeContext)
-
     const [visible, setVisible] = useState(false);
 
     return (
@@ -24,11 +23,8 @@ const DemoHeader = () => {
                         console.log("Ejecutando")
 
                     }}
-
-
                 >
                     <Text>Overlay</Text>
-
                 </TouchableOpacity>
 
 
@@ -61,7 +57,6 @@ const DemoHeader = () => {
     );
 
     /*
-    
      <TouchableOpacity
                     style={{ paddingLeft: 10, paddingTop: 50 }}
                     onPress={() => {
