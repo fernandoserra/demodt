@@ -4,12 +4,13 @@ import { Button } from "react-native";
 import DrawerNavigator from "./DrawerNavigator";
 
 import Login from "../screens/Login";
-import Home  from "../screens/Home";
+import Home from "../screens/Home";
 import About from "../screens/About";
 import Contact from "../screens/Contact";
 import Animations from "../screens/Animations";
 import DemoHeader from "../screens/DemoHeader";
 import VideoScreen from "../screens/VideoScreen";
+import BdScreem from "../screens/BdScreen";
 
 const Stack = createStackNavigator();
 
@@ -31,18 +32,18 @@ const Stack = createStackNavigator();
 }*/
 
 const screenOptionStyle = {
-    headerStyle: {
-      //backgroundColor: "#9AC4F8",
-    },
-    headerTintColor: "blue",
-    headerBackTitle: "Back",
-    headerShown:true,
-    headerLeft: () => (
-      <Button
-        onPress={() => alert('This is a button!')}
-        title="Info"
-        color="blue"
-      />)
+  headerStyle: {
+    //backgroundColor: "#9AC4F8",
+  },
+  headerTintColor: "blue",
+  headerBackTitle: "Back",
+  headerShown: true,
+  headerLeft: () => (
+    <Button
+      onPress={() => alert('This is a button!')}
+      title="Info"
+      color="blue"
+    />)
 
 };
 
@@ -52,36 +53,36 @@ const screenOptionStyle2 = {
   },
   headerTintColor: "blue",
   headerBackTitle: "Back",
-  headerShown:false
+  headerShown: false
 };
 
 const LoginStackNavigator = () => {
-    return (
-      <Stack.Navigator  
-        screenOptions={{
-          headerShown:false
-          }}  >
-        <Stack.Screen name="Login" component={Login} />
-        <Stack.Screen name="Drawer" options={{ headerShown:false }}  component={DrawerNavigator} />
-      </Stack.Navigator>
-    );
+  return (
+    <Stack.Navigator
+      screenOptions={{
+        headerShown: false
+      }}  >
+      <Stack.Screen name="Login" component={Login} />
+      <Stack.Screen name="Drawer" options={{ headerShown: false }} component={DrawerNavigator} />
+    </Stack.Navigator>
+  );
 }
 
 const MainStackNavigator = () => {
-    return (
-      <Stack.Navigator screenOptions={screenOptionStyle}>
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="About" component={About} />
-      </Stack.Navigator>
-    );
+  return (
+    <Stack.Navigator screenOptions={screenOptionStyle}>
+      <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="About" component={About} />
+    </Stack.Navigator>
+  );
 }
 
 const ContactStackNavigator = () => {
-    return (
-      <Stack.Navigator screenOptions={screenOptionStyle}>
-        <Stack.Screen name="Contact" component={Contact} />
-      </Stack.Navigator>
-    );
+  return (
+    <Stack.Navigator screenOptions={screenOptionStyle}>
+      <Stack.Screen name="Contact" component={Contact} />
+    </Stack.Navigator>
+  );
 }
 
 const AnimationStackNavigator = () => {
@@ -99,7 +100,7 @@ const DemoHeaderStackNavigator = () => {
     </Stack.Navigator>
   );
 }
- 
+
 const VideoStackNavigator = () => {
   return (
     <Stack.Navigator screenOptions={screenOptionStyle}>
@@ -107,7 +108,21 @@ const VideoStackNavigator = () => {
     </Stack.Navigator>
   );
 }
- 
 
+const BdStackNavigator = () => {
+  return (
+    <Stack.Navigator screenOptions={screenOptionStyle}>
+      <Stack.Screen name="BdScreem" component={BdScreem} />
+    </Stack.Navigator>
+  );
+}
 
-export { LoginStackNavigator,MainStackNavigator,ContactStackNavigator,AnimationStackNavigator,DemoHeaderStackNavigator,VideoStackNavigator };
+export {
+  LoginStackNavigator,
+  MainStackNavigator,
+  ContactStackNavigator,
+  AnimationStackNavigator,
+  DemoHeaderStackNavigator,
+  VideoStackNavigator,
+  BdStackNavigator,
+};
