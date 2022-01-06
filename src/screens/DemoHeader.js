@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React, { useContext, useState } from "react";
 import { View, StyleSheet, Text, Image, TouchableOpacity } from "react-native";
 import themeContext from "../context/themeContext";
@@ -14,14 +15,13 @@ const DemoHeader = () => {
                 height: 150,
                 backgroundColor: '#003366',
                 borderBottomLeftRadius: 30,
-                borderBottomEndRadius: 30
+                borderBottomEndRadius: 30,
             }}>
                 <TouchableOpacity
                     style={{ paddingLeft: 10, paddingTop: 50 }}
                     onPress={() => {
                         setVisible(!visible);
                         console.log("Ejecutando")
-
                     }}
                 >
                     <Text>Overlay</Text>

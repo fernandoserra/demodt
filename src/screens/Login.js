@@ -1,51 +1,51 @@
 import { StackActions } from "@react-navigation/routers";
-import React, {Component, useState, useContext, useEffect} from "react";
+import React, { Component, useState, useContext, useEffect } from "react";
 import { View, Button, StyleSheet, Text } from "react-native";
 import { CommonActions } from "@react-navigation/native";
 
 import PushNotification from "react-native-push-notification";
 
-	useEffect(()=>{
-		createChannels();
-	},[]);
+useEffect(() => {
+  createChannels();
+}, []);
 
-const Login = ({navigation}) => {
+const Login = ({ navigation }) => {
   return (
     <View style={styles.center}>
       <Text>Login</Text>
-      <Button 
-        title="Home" 
+      <Button
+        title="Home"
         onPress={() => redirect(navigation)}
-        />
+      />
     </View>
   );
 };
 
-const redirect = (navigation)=>{
-    console.log("Ejectando redirect")
-    navigation.navigate("Drawer")
+const redirect = (navigation) => {
+  console.log("Ejectando redirect")
+  navigation.navigate("Drawer")
 
-    //Funcionando
-    /*navigation.dispatch(
-        CommonActions.reset({
-           index: 0,
-           routes: [{ name: "Drawer" }],
-       })
-   );*/
+  //Funcionando
+  /*navigation.dispatch(
+      CommonActions.reset({
+         index: 0,
+         routes: [{ name: "Drawer" }],
+     })
+ );*/
 
-    navigation.reset({
-        routes: [{ name: "Drawer" }]
-    });
+  navigation.reset({
+    routes: [{ name: "Drawer" }]
+  });
 }
 
 
-const createChannels = () =>{
-	PushNotification.createChannel(
-		{
-			channelId: "test-channel",
-			channelName: "Test Channel"
-		}
-	)
+const createChannels = () => {
+  PushNotification.createChannel(
+    {
+      channelId: "test-channel",
+      channelName: "Test Channel"
+    }
+  )
 }
 
 const styles = StyleSheet.create({

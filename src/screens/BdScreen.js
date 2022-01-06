@@ -1,18 +1,17 @@
 /* eslint-disable prettier/prettier */
-import React, { useContext } from 'react';
+import React from "react";
 import { View, StyleSheet, Text } from "react-native";
 
-const SplashScreen = ({ navigation }) => {
-    return (
+const BdScreem = () => {
+    return(
         <View>
-            <Text>SplashScreen</Text>
+            <Text>BdScreem</Text>
         </View>
     );
-}
-
+};
 
 const styles = StyleSheet.create({
 
 });
 
-export default SplashScreen;
+export default BdScreem;
