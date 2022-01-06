@@ -5,6 +5,7 @@ import { ContactStackNavigator } from "./StackNavigator";
 import { AnimationStackNavigator } from "./StackNavigator";
 import { DemoHeaderStackNavigator } from "./StackNavigator";
 import { VideoStackNavigator } from "./StackNavigator";
+import { BdStackNavigator } from "./StackNavigator";
 import TabNavigator from "./TabNavigator";
 
 const Drawer = createDrawerNavigator();
@@ -21,6 +22,7 @@ const DrawerNavigator = () => {
             <Drawer.Screen name="Animation" component={AnimationStackNavigator} />
             <Drawer.Screen name="DemoHeaderStackNavigator" component={DemoHeaderStackNavigator} />
             <Drawer.Screen name="Video" component={VideoStackNavigator} />
+            <Drawer.Screen name="BD" component={BdStackNavigator} />
     </Drawer.Navigator>
   );
 }
