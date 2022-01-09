@@ -1,11 +1,12 @@
-/* eslint-disable prettier/prettier */
 import React from 'react';
+import { Input, Button } from "react-native-elements";
 import { View, StyleSheet, Text } from 'react-native';
 
 const BdScreem = () => {
     return (
         <View>
-            <Text>BdScreem</Text>
+            <Input  placeholder="Agregar Tarea"/>
+            <Button title="Añadir"/>
         </View>
     );
 };
