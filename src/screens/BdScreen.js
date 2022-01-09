@@ -55,13 +55,14 @@ const BdScreem = ({ navigation }) => {
 
             <View>
                 <FlatList
+                    style={{marginBottom:300}}
                     data={itemsShow}
                     renderItem={({ item, index }) => {
                         return (
                             <TouchableOpacity onPress={() => {
                                 console.log('touchable')
                             }}>
-                                <Card containerStyle={{ padding: 0 }} >
+                                <Card containerStyle={{ padding: 10 }} >
                                     <View >
                                         <Text>{item[1]}</Text>
                                     </View>
@@ -71,7 +72,6 @@ const BdScreem = ({ navigation }) => {
                     }
                     }
                 />
-
             </View>
         </View>
 
