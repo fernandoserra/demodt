@@ -1,5 +1,6 @@
 import React, { useEffect, useContext, useState } from 'react';
 import { View, StyleSheet, Text, Alert, TouchableOpacity,FlatList } from 'react-native';
+import { Swipeable } from 'react-native-gesture-handler';
 import { Input, Button, Card } from "react-native-elements";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
