@@ -29,6 +29,16 @@ const BdScreem = ({ navigation }) => {
         }
     }
 
+    const remove = async (key) => {
+        try {
+            await AsyncStorage.removeItem(key);
+            getAllKeys()
+            return true;
+        } catch (err) {
+            return false;
+        }
+    }
+
     useEffect(() => {
         const unsubscribe = navigation.addListener('focus', () => {
             // do something
