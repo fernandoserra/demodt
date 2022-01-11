@@ -59,9 +59,7 @@ const BdScreem = ({ navigation }) => {
                     data={itemsShow}
                     renderItem={({ item, index }) => {
                         return (
-                            <TouchableOpacity onPress={() => {
-                                console.log('touchable')
-                            }}>
+                            <TouchableOpacity >
                                 <Card containerStyle={{ padding: 10 }} >
                                     <View >
                                         <Text>{item[1]}</Text>
