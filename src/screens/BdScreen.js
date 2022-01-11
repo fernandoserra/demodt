@@ -1,6 +1,6 @@
 import React, { useEffect, useContext, useState } from 'react';
-import { View, StyleSheet, Text, Alert, TouchableOpacity,FlatList } from 'react-native';
-import { Swipeable } from 'react-native-gesture-handler';
+import { View, StyleSheet, Text, Alert, TouchableOpacity } from 'react-native';
+import { FlatList, Swipeable } from 'react-native-gesture-handler';
 import { Input, Button, Card } from "react-native-elements";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -66,23 +66,27 @@ const BdScreem = ({ navigation }) => {
 
             <View>
                 <FlatList
-                    style={{marginBottom:300}}
+                    style={{ marginBottom: 300 }}
                     data={itemsShow}
                     renderItem={({ item, index }) => {
                         return (
-                            <TouchableOpacity >
-                                <Card containerStyle={{ padding: 10 }} >
+                            <Card containerStyle={{ padding: 10 }} >
+                                <Swipeable
+                                    key={item}
+                                    onSwipeableRightOpen={() => {
+                                        remove(item[0])
+                                    }}>
                                     <View >
                                         <Text>{item[1]}</Text>
                                     </View>
-                                </Card>
-                            </TouchableOpacity>
+                                </Swipeable>
+                            </Card>
                         )
                     }
                     }
                 />
             </View>
-        </View>
+        </View >
 
     );
 };
