@@ -7,7 +7,7 @@ import themeContext from "../context/themeContext";
 import { stylesPerson } from "../styles/styles";
 import PushNotification from "react-native-push-notification";
 import PushNotificationIOS from '@react-native-community/push-notification-ios';
-import strings from "../styles/strings";
+import strings from "../values/strings";
 
 const Home = ({ navigation }) => {
 

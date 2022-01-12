@@ -7,8 +7,7 @@ import { DemoHeaderStackNavigator } from "./StackNavigator";
 import { VideoStackNavigator } from "./StackNavigator";
 import { BdStackNavigator } from "./StackNavigator";
 import TabNavigator from "./TabNavigator";
-import string from "../styles/strings";
-import strings from "../styles/strings";
+import strings from "../values/strings";
 
 const Drawer = createDrawerNavigator();
 
