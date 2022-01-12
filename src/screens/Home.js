@@ -7,6 +7,7 @@ import themeContext from "../context/themeContext";
 import { stylesPerson } from "../styles/styles";
 import PushNotification from "react-native-push-notification";
 import PushNotificationIOS from '@react-native-community/push-notification-ios';
+import strings from "../styles/strings";
 
 const Home = ({ navigation }) => {
 
@@ -25,7 +26,7 @@ const Home = ({ navigation }) => {
             />
 
           <Button 
-            title="Notificación" 
+            title={strings.NOTICATION}
             onPress={() => handleNotification()}
             />
         </View>

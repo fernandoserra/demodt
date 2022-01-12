@@ -3,5 +3,6 @@ module.exports = {
     HOME : 'Home',
     BD:'BD',
     ANIMATION:'Animation',
-    VIDEO:'Video'
+    VIDEO:'Video',
+    NOTICATION:'Notificación'
 }
