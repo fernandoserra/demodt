@@ -1,5 +1,7 @@
 module.exports = {
     CONTACT : 'Contacto',
     HOME : 'Home',
-    BD:'BD'
+    BD:'BD',
+    ANIMATION:'Animation',
+    VIDEO:'Video'
 }

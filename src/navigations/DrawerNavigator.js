@@ -21,9 +21,9 @@ const DrawerNavigator = () => {
         }}>
             <Drawer.Screen name={strings.HOME} component={TabNavigator} />
             <Drawer.Screen name={strings.CONTACT} component={ContactStackNavigator} />
-            <Drawer.Screen name="Animation" component={AnimationStackNavigator} />
+            <Drawer.Screen name={strings.ANIMATION} component={AnimationStackNavigator} />
             <Drawer.Screen name="DemoHeaderStackNavigator" component={DemoHeaderStackNavigator} />
-            <Drawer.Screen name="Video" component={VideoStackNavigator} />
+            <Drawer.Screen name={strings.VIDEO} component={VideoStackNavigator} />
             <Drawer.Screen name={strings.BD} component={BdStackNavigator} />
     </Drawer.Navigator>
   );
