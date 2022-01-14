@@ -2,19 +2,19 @@ import { StyleSheet } from 'react-native';
 
 
 export const stylesPerson = (theme) => StyleSheet.create({
-//export default StyleSheet.create({
- 
+  //export default StyleSheet.create({
+
   largeButtonText: {
     //fontSize: theme.FONT_SIZE_LARGE,
     //fontWeight: theme.FONT_WEIGHT_HEAVY,
-    color:theme.color
+    color: theme.color
   },
-  largeHeaderText:{
+  largeHeaderText: {
     fontSize: theme.FONT_SIZE_LARGE
   },
   mediumHeaderText: {
     fontSize: theme.FONT_SIZE_MEDIUM,
-    color:theme.FONT_SIZE_LARGE
+    color: theme.FONT_SIZE_LARGE
   }
 });
 
