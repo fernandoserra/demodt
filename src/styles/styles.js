@@ -15,7 +15,15 @@ export const stylesPerson = (theme) => StyleSheet.create({
   mediumHeaderText: {
     fontSize: theme.FONT_SIZE_MEDIUM,
     color: theme.FONT_SIZE_LARGE
+  },
+
+  center: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
   }
+  
 });
 
 

@@ -18,7 +18,7 @@ const Home = ({ navigation }) => {
     console.log("==========")
 
     return (
-        <View style={[styles.center, {backgroundColor:theme.background}]}>
+        <View style={[stylesPerson(theme).center, {backgroundColor:theme.background}]}>
         <Text style={stylesPerson(theme).largeButtonText}>This is the home screen...</Text>
         <Button 
             title="Go to About Screen" 
@@ -68,12 +68,6 @@ Home.navigationOptions={
 }
 
 const styles = StyleSheet.create({
-  center: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    textAlign: "center",
-  },
 });
 
 export default Home;
