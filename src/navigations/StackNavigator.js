@@ -11,7 +11,7 @@ import Animations from "../screens/Animations";
 import DemoHeader from "../screens/DemoHeader";
 import VideoScreen from "../screens/VideoScreen";
 import BdScreem from "../screens/BdScreen";
-
+import TrackPlayer from "../screens/TrackPlayer";
 const Stack = createStackNavigator();
 
 /*const MainStackNavigator = () => {
@@ -117,6 +117,14 @@ const BdStackNavigator = () => {
   );
 }
 
+const TrackPlayerNavigator = () => {
+  return (
+    <Stack.Navigator screenOptions={screenOptionStyle}>
+      <Stack.Screen name="TrackScreem" component={TrackPlayer} />
+    </Stack.Navigator>
+  );
+}
+
 export {
   LoginStackNavigator,
   MainStackNavigator,
@@ -125,4 +133,5 @@ export {
   DemoHeaderStackNavigator,
   VideoStackNavigator,
   BdStackNavigator,
+  TrackPlayerNavigator
 };
