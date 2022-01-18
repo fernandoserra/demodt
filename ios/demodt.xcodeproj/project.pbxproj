@@ -21,6 +21,7 @@
 		6F015E29CDB307D8BA0D5827 /* libPods-demodt-demodtTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01EFE2ADB41E32BB23987275 /* libPods-demodt-demodtTests.a */; };
 		7CB3E0F6F48C483289300FD2 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAB928DEBA8A429188FD985D /* Roboto-ThinItalic.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		B3F0AACF2796536E00EF9DAF /* dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F0AACE2796536E00EF9DAF /* dummy.swift */; };
 		BF83B07CDF914F7A9928C83A /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B608A4AD0360450094D1386D /* Roboto-BoldItalic.ttf */; };
 		C3B85C6CF52E4FA9A28DCCCA /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A532E83BC5AC4E9C8AC55636 /* Roboto-Medium.ttf */; };
 		C5B8BAD37EF645A0A09C82F6 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60D29ACDE0674F7D88AF050E /* Roboto-Regular.ttf */; };
@@ -60,6 +61,8 @@
 		A254F69AC8D044929900857E /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BlackItalic.ttf"; path = "../assets/fonts/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
 		A532E83BC5AC4E9C8AC55636 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		B3AD26B72735940900BF4D8D /* demodt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = demodt.entitlements; path = demodt/demodt.entitlements; sourceTree = "<group>"; };
+		B3F0AACD2796536D00EF9DAF /* demodt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "demodt-Bridging-Header.h"; sourceTree = "<group>"; };
+		B3F0AACE2796536E00EF9DAF /* dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dummy.swift; sourceTree = "<group>"; };
 		B608A4AD0360450094D1386D /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BoldItalic.ttf"; path = "../assets/fonts/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
 		B694C50AD5F0332ECD0DD60F /* Pods-demodt-demodtTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demodt-demodtTests.release.xcconfig"; path = "Target Support Files/Pods-demodt-demodtTests/Pods-demodt-demodtTests.release.xcconfig"; sourceTree = "<group>"; };
 		BF36D722384183D8AD7390DC /* Pods-demodt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demodt.debug.xcconfig"; path = "Target Support Files/Pods-demodt/Pods-demodt.debug.xcconfig"; sourceTree = "<group>"; };
@@ -161,6 +164,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				B3F0AACE2796536E00EF9DAF /* dummy.swift */,
 				13B07FAE1A68108700A75B9A /* demodt */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* demodtTests */,
@@ -168,6 +172,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				0EE7E1EC038C41BF9F5F3867 /* Resources */,
 				F59D92FF62ABB8969457BE88 /* Pods */,
+				B3F0AACD2796536D00EF9DAF /* demodt-Bridging-Header.h */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -253,7 +258,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -469,6 +474,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				B3F0AACF2796536E00EF9DAF /* dummy.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +494,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6EEBA6AEC8AE3716A9A16791 /* Pods-demodt-demodtTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -515,6 +522,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B694C50AD5F0332ECD0DD60F /* Pods-demodt-demodtTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = demodtTests/Info.plist;
@@ -556,6 +564,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = demodt;
+				SWIFT_OBJC_BRIDGING_HEADER = "demodt-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -582,6 +591,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = demodt;
+				SWIFT_OBJC_BRIDGING_HEADER = "demodt-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

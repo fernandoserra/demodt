@@ -11,7 +11,7 @@ import Animations from "../screens/Animations";
 import DemoHeader from "../screens/DemoHeader";
 import VideoScreen from "../screens/VideoScreen";
 import BdScreem from "../screens/BdScreen";
-import TrackPlayer from "../screens/TrackPlayer";
+import TrackPlayer from "../screens/TrackPlayerScreen";
 const Stack = createStackNavigator();
 
 /*const MainStackNavigator = () => {
