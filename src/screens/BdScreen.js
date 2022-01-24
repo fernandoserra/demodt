@@ -40,6 +40,31 @@ const BdScreem = ({ navigation }) => {
         }
     }
 
+    const rightSwipe = (progress, dragX, item, deleteItem) => {
+        console.log("Ejecutando rightSwipe")
+        const scale = dragX.interpolate({
+            inputRange: [0, 100],
+            outputRange: [0, 1],
+            extrapolate: 'clamp',
+        });
+        return (
+            <TouchableOpacity activeOpacity={0.6} onPress={deleteItem}>
+                <View style={styles.deleteBox}>
+                    {/*<FontAwesome
+                        name="trash-o"
+                        color="rgba(110, 110, 110, .9)"
+                        size={24}
+
+                    onPress={() => {
+                        //deleteButtonPressed()
+                        console.log('ejecutandoooo: ')
+                    }}
+                    />*/}
+                </View>
+            </TouchableOpacity>
+        );
+    }
+
     useEffect(() => {
         const unsubscribe = navigation.addListener('focus', () => {
             // do something
@@ -53,10 +78,13 @@ const BdScreem = ({ navigation }) => {
         });
     }, [navigation]);
 
+ 
+
 
     return (
+     
         <View>
-
+            { console.log("Ejecutando return") }
             <View>
                 <Input value={name} onChangeText={setName} placeholder="Agregar Tarea" />
                 <Spacer>
@@ -73,7 +101,9 @@ const BdScreem = ({ navigation }) => {
                             <Card containerStyle={{ padding: 10 }} >
                                 <Swipeable
                                     key={item}
+                                    renderRightActions={rightSwipe}
                                     onSwipeableRightOpen={() => {
+                                        console.log("open delete")
                                         remove(item[0])
                                     }}>
                                     <View >
@@ -92,7 +122,13 @@ const BdScreem = ({ navigation }) => {
 };
 
 const styles = StyleSheet.create({
-
+    deleteBox: {
+        //backgroundColor: 'gray',
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: 80,
+        height: 55,
+    },
 });
 
 export default BdScreem;
