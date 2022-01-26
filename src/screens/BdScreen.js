@@ -78,9 +78,6 @@ const BdScreem = ({ navigation }) => {
         });
     }, [navigation]);
 
- 
-
-
     return (
      
         <View>
