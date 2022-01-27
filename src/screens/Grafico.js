@@ -2,8 +2,6 @@ import React, { useContext } from "react";
 import { View, StyleSheet, Text } from "react-native";
 import themeContext from "../context/themeContext";
 
-
-
 const Grafico = () => {
     const theme = useContext(themeContext)
 
