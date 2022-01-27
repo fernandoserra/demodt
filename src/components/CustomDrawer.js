@@ -11,8 +11,10 @@ import {
     DrawerItemList,
 } from '@react-navigation/drawer';
 
-import Ionicons from 'react-native-vector-icons/Ionicons';
-import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
+//import Ionicons from 'react-native-vector-icons/Ionicons';
+//import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
+
+import { Icon } from 'react-native-elements';
 
 const CustomDrawer = props => {
     return (
@@ -45,7 +47,7 @@ const CustomDrawer = props => {
                             }}>
                             280 Coins
                         </Text>
-                        <FontAwesome5 name="coins" size={14} color="#fff" />
+                        {/*<FontAwesome5 name="coins" size={14} color="#fff" />*/}
                     </View>
                 </ImageBackground>
                 <View style={{ flex: 1, backgroundColor: '#fff', paddingTop: 10 }}>
@@ -56,7 +58,8 @@ const CustomDrawer = props => {
             <View style={{ padding: 20, borderTopWidth: 1, borderTopColor: '#ccc' }}>
                 <TouchableOpacity onPress={() => { }} style={{ paddingVertical: 15 }}>
                     <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-                        <Ionicons name="share-social-outline" size={22} />
+                        {/*<Ionicons name="share-social-outline" size={22} />*/}
+                        <Icon name="md-beer" type="ionicon" color="#887700" />
                         <Text
                             style={{
                                 fontSize: 15,
@@ -69,7 +72,7 @@ const CustomDrawer = props => {
                 </TouchableOpacity>
                 <TouchableOpacity onPress={() => { }} style={{ paddingVertical: 15 }}>
                     <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-                        <Ionicons name="exit-outline" size={22} />
+                        {/*<Ionicons name="exit-outline" size={22} />*/}
                         <Text
                             style={{
                                 fontSize: 15,
