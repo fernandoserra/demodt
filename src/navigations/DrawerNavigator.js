@@ -8,6 +8,7 @@ import { VideoStackNavigator } from "./StackNavigator";
 import { BdStackNavigator, TrackPlayerNavigator } from "./StackNavigator";
 import TabNavigator from "./TabNavigator";
 import strings from "../values/strings";
+import CustomDrawer from "../components/CustomDrawer";
 
 const Drawer = createDrawerNavigator();
 
@@ -15,6 +16,7 @@ const DrawerNavigator = () => {
   return (
     <Drawer.Navigator 
         initialRouteName="Home"
+		drawerContent={props => <CustomDrawer {...props} />}
         screenOptions={{ 
             headerShown:false
         }}>
