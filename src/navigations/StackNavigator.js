@@ -13,6 +13,7 @@ import VideoScreen from "../screens/VideoScreen";
 import BdScreem from "../screens/BdScreen";
 import TrackPlayer from "../screens/TrackPlayerScreen";
 import Grafico from "../screens/Grafico";
+import ScreenSVG from "../screens/ScreenSVG";
 
 const Stack = createStackNavigator();
 
@@ -135,6 +136,14 @@ const GraficoNavigator = () => {
   );
 }
 
+const SVGNavigator = () => {
+  return (
+    <Stack.Navigator screenOptions={screenOptionStyle}>
+      <Stack.Screen name="SVGScreem" component={ScreenSVG} />
+    </Stack.Navigator>
+  );
+}
+
 export {
   LoginStackNavigator,
   MainStackNavigator,
@@ -144,5 +153,6 @@ export {
   VideoStackNavigator,
   BdStackNavigator,
   TrackPlayerNavigator,
-  GraficoNavigator
+  GraficoNavigator,
+  SVGNavigator
 };
