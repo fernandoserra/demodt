@@ -5,7 +5,7 @@ import { ContactStackNavigator } from "./StackNavigator";
 import { AnimationStackNavigator } from "./StackNavigator";
 import { DemoHeaderStackNavigator } from "./StackNavigator";
 import { VideoStackNavigator } from "./StackNavigator";
-import { BdStackNavigator, TrackPlayerNavigator, GraficoNavigator } from "./StackNavigator";
+import { BdStackNavigator, TrackPlayerNavigator, GraficoNavigator, SVGNavigator } from "./StackNavigator";
 import TabNavigator from "./TabNavigator";
 import strings from "../values/strings";
 import CustomDrawer from "../components/CustomDrawer";
@@ -28,6 +28,7 @@ const DrawerNavigator = () => {
             <Drawer.Screen name={strings.BD} component={BdStackNavigator} />
             <Drawer.Screen name="TrackPlayer" component={TrackPlayerNavigator} />
             <Drawer.Screen name="Grafico" component={GraficoNavigator} />
+            <Drawer.Screen name="SVG" component={SVGNavigator} />
     </Drawer.Navigator>
   );
 }
