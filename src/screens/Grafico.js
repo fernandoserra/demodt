@@ -1,4 +1,4 @@
-import React, { useState, useEffect,useContext } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { View, StyleSheet, Text } from "react-native";
 import themeContext from "../context/themeContext";
 
@@ -11,7 +11,7 @@ import { getJsonplaceholder } from '../redux/actions';
 
 //https://formidable.com/open-source/victory/docs/victory-pie
 
-const Grafico = () => {
+const Grafico = ({ navigation }) => {
     const theme = useContext(themeContext)
 
     const data = [
@@ -25,8 +25,10 @@ const Grafico = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(getJsonplaceholder());
-    }, []);
+        const unsubscribe = navigation.addListener('focus', () => {
+            dispatch(getJsonplaceholder());
+        });
+    }, [navigation]);
 
     return (
         <View style={styles.container}>

@@ -8,13 +8,14 @@ import { getCities } from '../redux/actions';
 
 const ScreenSVG = ({ navigation }) => {
 
-
     //const { name, age, cities } = useSelector(state => state.userReducer);
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(getCities());
-    }, []);
+        const unsubscribe = navigation.addListener('focus', () => {
+            dispatch(getCities());
+        });
+    }, [navigation]);
 
     function SvgPicture() {
         return (
