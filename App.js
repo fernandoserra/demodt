@@ -9,15 +9,20 @@ import { LoginStackNavigator } from "./src/navigations/StackNavigator";
 import theme from "./src/styles/theme.style";
 import themeContext from "./src/context/themeContext";
 
+import { Provider } from 'react-redux';
+import { Store } from "./src/redux/store";
+
 
 
 const App = () => {
   return (
-    <themeContext.Provider value={theme.ligth}>
-      <NavigationContainer>
-        <LoginStackNavigator/>
-      </NavigationContainer>
-    </themeContext.Provider>
+    <Provider store={Store}>
+      <themeContext.Provider value={theme.ligth}>
+        <NavigationContainer>
+          <LoginStackNavigator />
+        </NavigationContainer>
+      </themeContext.Provider>
+    </Provider>
   );
   // <NavigationContainer theme={DarkTheme}>
   ////<MainStackNavigator />

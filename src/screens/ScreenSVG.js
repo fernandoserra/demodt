@@ -1,9 +1,20 @@
-import React, { useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, StyleSheet, Text } from "react-native";
 import Logo from '../images/react-native-logo.svg'
 import Svg, { Path, Defs, LinearGradient, Stop, Ellipse } from 'react-native-svg';
 
+import { useSelector, useDispatch } from 'react-redux';
+import { getCities } from '../redux/actions';
+
 const ScreenSVG = ({ navigation }) => {
+
+
+    //const { name, age, cities } = useSelector(state => state.userReducer);
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(getCities());
+    }, []);
 
     function SvgPicture() {
         return (
