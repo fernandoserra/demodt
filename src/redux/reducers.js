@@ -4,6 +4,7 @@ const initialState = {
     name: '',
     age: 0,
     cities: [],
+    placeholder: [],
 }
 
 function userReducer(state = initialState, action) {
