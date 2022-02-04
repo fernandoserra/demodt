@@ -14,6 +14,8 @@ import BdScreem from "../screens/BdScreen";
 import TrackPlayer from "../screens/TrackPlayerScreen";
 import Grafico from "../screens/Grafico";
 import ScreenSVG from "../screens/ScreenSVG";
+import ReduxScreen1 from "../screens/ReduxSreen1";
+import ReduxScreen2 from "../screens/ReduxSreen2";
 
 const Stack = createStackNavigator();
 
@@ -144,6 +146,21 @@ const SVGNavigator = () => {
   );
 }
 
+const Redux1Navigator = () => {
+  return (
+    <Stack.Navigator screenOptions={screenOptionStyle}>
+      <Stack.Screen name="ReduxScreen1" component={ReduxScreen1} />
+    </Stack.Navigator>
+  );
+}
+const Redux2Navigator = () => {
+  return (
+    <Stack.Navigator screenOptions={screenOptionStyle}>
+      <Stack.Screen name="ReduxScreen2" component={ReduxScreen2} />
+    </Stack.Navigator>
+  );
+}
+
 export {
   LoginStackNavigator,
   MainStackNavigator,
@@ -154,5 +171,7 @@ export {
   BdStackNavigator,
   TrackPlayerNavigator,
   GraficoNavigator,
-  SVGNavigator
+  SVGNavigator,
+  Redux1Navigator,
+  Redux2Navigator
 };

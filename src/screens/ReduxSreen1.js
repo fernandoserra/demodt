@@ -5,6 +5,20 @@ import { getCities } from '../redux/actions';
 
 const ReduxScreen1 = ({ navigation }) => {
 
+    const { cities } = useSelector(state => state.userReducer);
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        const unsubscribe = navigation.addListener('focus', () => {
+            dispatch(getCities());
+        });
+    }, [navigation]);
+
+    return (
+        <View>
+            <Text>{JSON.stringify(cities)}</Text>
+        </View>
+    );
 }
 
 const styles = StyleSheet.create({
