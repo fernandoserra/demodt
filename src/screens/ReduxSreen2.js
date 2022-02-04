@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { View, StyleSheet, Text } from "react-native";
 import { useSelector, useDispatch } from 'react-redux';
-import { getCities } from '../redux/actions';
+import { getJsonplaceholder } from '../redux/actions';
 
 const ReduxScreen2 = ({ navigation }) => {
 
+    const { placeholder } = useSelector(state => state.userReducer);
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -16,10 +17,10 @@ const ReduxScreen2 = ({ navigation }) => {
 
     return (
         <View>
-            <Text>Redux 2</Text>
+            <Text>{JSON.stringify(placeholder)}</Text>
         </View>
     );
-    
+
 }
 
 const styles = StyleSheet.create({
