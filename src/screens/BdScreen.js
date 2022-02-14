@@ -4,12 +4,15 @@ import { FlatList, Swipeable } from 'react-native-gesture-handler';
 import { Input, Button, Card } from "react-native-elements";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
+import Shimmer from '../utils/Shimmer';
+
 import Spacer from '../components/Spacer';
 
 const BdScreem = ({ navigation }) => {
 
     const [name, setName] = useState('');
     const [itemsShow, setItemsShow] = useState([]);
+    const [visible, setVisible] = useState(false);
 
     const addBD = async () => {
         var dateNow = Date.now();
@@ -76,17 +79,27 @@ const BdScreem = ({ navigation }) => {
             // do something
             console.log("Ejecutando useEffect()  blur" + Date.now())
         });
+
+        setTimeout(() => {
+          setVisible(true)
+        }, 5000)
     }, [navigation]);
 
     return (
-     
+
         <View>
-            { console.log("Ejecutando return") }
+            {console.log("Ejecutando return")}
             <View>
                 <Input value={name} onChangeText={setName} placeholder="Agregar Tarea" />
                 <Spacer>
                     <Button title="Añadir" onPress={addBD} />
                 </Spacer>
+            </View>
+
+            <View style={{flexDirection: 'row',margin: 16 , backgroundColor:'red'}} >
+                <Shimmer autoRun={true}  style={{backgroundColor:'#fff'}}  visible={visible}>
+                    <Text style={{backgroundColor:'white'}}>HOLAAA</Text>
+                </Shimmer>
             </View>
 
             <View>
@@ -104,7 +117,9 @@ const BdScreem = ({ navigation }) => {
                                         remove(item[0])
                                     }}>
                                     <View >
-                                        <Text>{item[1]}</Text>
+                                        <Shimmer autoRun={true} visible={true}>
+                                            <Text>{item[1]}</Text>
+                                        </Shimmer>
                                     </View>
                                 </Swipeable>
                             </Card>
