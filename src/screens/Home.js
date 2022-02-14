@@ -10,6 +10,11 @@ import PushNotificationIOS from '@react-native-community/push-notification-ios';
 import strings from "../values/strings";
 import Shimmer from "../utils/Shimmer";
 
+import LinearGradient from 'react-native-linear-gradient';
+import { createShimmerPlaceholder } from 'react-native-shimmer-placeholder'
+import ShimmerPlaceHolder from 'react-native-shimmer-placeholder'
+
+
 const Home = ({ navigation }) => {
 
   const theme = useContext(themeContext)
@@ -22,14 +27,14 @@ const Home = ({ navigation }) => {
 
   useEffect(() => {
     const unsubscribe = navigation.addListener('focus', () => {
-    
+
       setTimeout(() => {
         setVisible(true)
-      }, 5000)
+      }, 3000)
 
     });
-  
-}, [navigation]);
+
+  }, [navigation]);
 
   return (
     <View style={[stylesPerson(theme).center, { backgroundColor: theme.background }]}>
@@ -47,6 +52,13 @@ const Home = ({ navigation }) => {
       <Shimmer autoRun={true} style={{ backgroundColor: '#fff' }} visible={visible}>
         <Text style={{ backgroundColor: 'white' }}>HOLAAA</Text>
       </Shimmer>
+
+      <Text>=====</Text>
+
+      <ShimmerPlaceHolder
+        LinearGradient={LinearGradient}
+      />
+
     </View>
 
 
