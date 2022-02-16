@@ -53,15 +53,12 @@ const Home = ({ navigation }) => {
         <Text style={{ backgroundColor: 'white' }}>HOLAAA</Text>
       </Shimmer>
 
-      <Text>=====</Text>
-
+      <Text>===</Text>
       <ShimmerPlaceHolder
         LinearGradient={LinearGradient}
       />
 
-    </View>
-
-
+    </View> 
   );
 };
 
