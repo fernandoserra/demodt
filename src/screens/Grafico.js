@@ -1,13 +1,9 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { View, StyleSheet, Text } from "react-native";
 import themeContext from "../context/themeContext";
-
 import { VictoryBar, VictoryChart, VictoryTheme } from "victory-native";
-
-
 import { useSelector, useDispatch } from 'react-redux';
 import { getJsonplaceholder } from '../redux/actions';
-
 
 //https://formidable.com/open-source/victory/docs/victory-pie
 

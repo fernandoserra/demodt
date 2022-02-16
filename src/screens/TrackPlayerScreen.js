@@ -19,8 +19,6 @@ const tracks = [
   }
 ]
 
-
-
   TrackPlayer.updateOptions({
     stopWithApp: false,
     capabilities: [TrackPlayer.CAPABILITY_PLAY, TrackPlayer.CAPABILITY_PAUSE],

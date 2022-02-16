@@ -3,9 +3,7 @@ import { View, StyleSheet, Text, Alert, TouchableOpacity } from 'react-native';
 import { FlatList, Swipeable } from 'react-native-gesture-handler';
 import { Input, Button, Card } from "react-native-elements";
 import AsyncStorage from '@react-native-async-storage/async-storage';
-
 import Shimmer from '../utils/Shimmer';
-
 import Spacer from '../components/Spacer';
 
 const BdScreem = ({ navigation }) => {

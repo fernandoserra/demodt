@@ -25,8 +25,6 @@ const About = () => {
 				>
 				</MapView>
 			</View>
-
-
 		</View>
 		/*
 			<View style={[styles.center, {backgroundColor:theme.background}]}>
