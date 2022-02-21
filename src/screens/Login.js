@@ -17,6 +17,13 @@ const Login = ({ navigation }) => {
         title="Home"
         onPress={() => redirect(navigation)}
       />
+
+      <Button
+        title="Redirect 2"
+        onPress={() =>{
+          navigation.navigate("Drawer",{screen:"Grafico"})
+        }}
+      />
     </View>
   );
 };
