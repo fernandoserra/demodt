@@ -1,5 +1,5 @@
 import React from 'react'
-import { List } from 'react-native-paper';
+//import { List } from 'react-native-paper';
 import { StyleSheet, View } from 'react-native'
 
 const MenuTabsScreen = ({ navigation }) => {
@@ -7,7 +7,7 @@ const MenuTabsScreen = ({ navigation }) => {
   const navigate = (route) => navigation.navigate(route)
   return (
     <View styles={{ flex: 1 }}>
-      <List.Accordion
+      {/*<List.Accordion
         title="Bottom Tab Navigation"
         left={props => <List.Icon {...props} icon="folder" />}>
         <List.Item title="Animatable Tab1" onPress={() => navigate('Tab1')} />
@@ -23,7 +23,7 @@ const MenuTabsScreen = ({ navigation }) => {
         <List.Item title="List Screen" onPress={() => navigate('List')} />
         <List.Item title="Dark List Screen" onPress={() => navigate('DarkList')} />
         <List.Item title="Products Screen" onPress={() => navigate('Products')} />
-      </List.Accordion>
+      </List.Accordion>*/}
     </View>
   )
 }
