@@ -5,7 +5,7 @@ import { ContactStackNavigator } from "./StackNavigator";
 import { AnimationStackNavigator } from "./StackNavigator";
 import { DemoHeaderStackNavigator } from "./StackNavigator";
 import { VideoStackNavigator } from "./StackNavigator";
-import { BdStackNavigator, TrackPlayerNavigator, GraficoNavigator, SVGNavigator, Redux1Navigator, Redux2Navigator } from "./StackNavigator";
+import { BdStackNavigator, TrackPlayerNavigator, GraficoNavigator, SVGNavigator, Redux1Navigator, Redux2Navigator,MenuTabNavigator } from "./StackNavigator";
 import TabNavigator from "./TabNavigator";
 import strings from "../values/strings";
 import CustomDrawer from "../components/CustomDrawer";
@@ -31,6 +31,7 @@ const DrawerNavigator = () => {
             <Drawer.Screen name="SVG" component={SVGNavigator} />
             <Drawer.Screen name="Redux1" component={Redux1Navigator} />
             <Drawer.Screen name="Redux2" component={Redux2Navigator} />
+            <Drawer.Screen name="Menu Tabs" component={MenuTabNavigator} />
     </Drawer.Navigator>
   );
 }
