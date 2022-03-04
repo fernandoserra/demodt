@@ -17,6 +17,7 @@ import ScreenSVG from "../screens/ScreenSVG";
 import ReduxScreen1 from "../screens/ReduxSreen1";
 import ReduxScreen2 from "../screens/ReduxSreen2";
 import MenuTabsScreen from "../screens/MenuTabsScreen";
+import TabsScreen from "../screens/TabsScreen";
 
 const Stack = createStackNavigator();
 
@@ -170,6 +171,14 @@ const MenuTabNavigator = () => {
   );
 }
 
+const TabsNavigator = () => {
+  return (
+    <Stack.Navigator screenOptions={screenOptionStyle}>
+      <Stack.Screen name="Tabs" component={TabsScreen} />
+    </Stack.Navigator>
+  );
+}
+
 export {
   LoginStackNavigator,
   MainStackNavigator,
@@ -183,5 +192,6 @@ export {
   SVGNavigator,
   Redux1Navigator,
   Redux2Navigator,
-  MenuTabNavigator
+  MenuTabNavigator,
+  TabsNavigator
 };
