@@ -18,6 +18,7 @@ import ReduxScreen1 from "../screens/ReduxSreen1";
 import ReduxScreen2 from "../screens/ReduxSreen2";
 import MenuTabsScreen from "../screens/MenuTabsScreen";
 import TabsScreen from "../screens/TabsScreen";
+import TabsViewScreen from "../screens/TabsViewScreen";
 
 const Stack = createStackNavigator();
 
@@ -179,6 +180,14 @@ const TabsNavigator = () => {
   );
 }
 
+const TabsViewNavigator = () => {
+  return (
+    <Stack.Navigator screenOptions={screenOptionStyle}>
+      <Stack.Screen name="TabsViewScreen" component={TabsViewScreen} />
+    </Stack.Navigator>
+  );
+}
+
 export {
   LoginStackNavigator,
   MainStackNavigator,
@@ -193,5 +202,6 @@ export {
   Redux1Navigator,
   Redux2Navigator,
   MenuTabNavigator,
-  TabsNavigator
+  TabsNavigator,
+  TabsViewNavigator
 };
