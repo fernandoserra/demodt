@@ -17,6 +17,12 @@ export default DefaultComponent = (props) => {
     )
 }
 
+const style =StyleSheet.create({
+    titulo:{
+        fontSize:20,
+        marginTop: Platform.OS === "android" ? 30:0
+    }
+});
 //otra
 DefaultComponent.defaultProps = {
     firstName:"valor por defecto",
