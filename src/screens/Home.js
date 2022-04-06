@@ -59,6 +59,7 @@ const Home = ({ navigation }) => {
         LinearGradient={LinearGradient}
       />
 
+      <DefaultComponent firstName lastName="Kakaroto" />
     </View> 
   );
 };
