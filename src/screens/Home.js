@@ -14,6 +14,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import { createShimmerPlaceholder } from 'react-native-shimmer-placeholder'
 import ShimmerPlaceHolder from 'react-native-shimmer-placeholder'
 
+import DefaultComponent from "../components/DefaultComponent";
 
 const Home = ({ navigation }) => {
 
