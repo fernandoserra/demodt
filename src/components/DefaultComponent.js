@@ -15,7 +15,13 @@ export default DefaultComponent = (props) => {
 }
 
 //otra
-DefaultComponent.defaultProps ={
+DefaultComponent.defaultProps = {
     firstName:"valor por defecto",
     lastName: "otro valor por defecto"
+}
+
+
+DefaultComponent.propTypes = {
+    firstName: PropTypes.string.isRequired,
+    lastName: PropTypes.string
 }
