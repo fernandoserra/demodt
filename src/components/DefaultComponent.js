@@ -1,9 +1,12 @@
 import React from 'react'
-import { View, StyleSheet, Text } from 'react-native';
+import { View, StyleSheet, Text, Platform } from 'react-native';
 
 import PropTypes from "prop-types"
 
 export default DefaultComponent = (props) => {
+
+
+    console.log(Platform.OS)
 
     const { firstName ="valor por defecto", lastName} = props
 
