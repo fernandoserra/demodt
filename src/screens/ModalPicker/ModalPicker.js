@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View, TouchableOpacity, Dimensions, ScrollView } from 'react-native'
 
-const OPTIONS = ['red', 'blue', 'yellow', 'green', 'orange', 'white', 'purple']
+//const OPTIONS = ['red', 'blue', 'yellow', 'green', 'orange', 'white', 'purple']
 const WIDTH = Dimensions.get('window').width;
 const HEIGHT = Dimensions.get('window').height;
 
@@ -12,7 +12,7 @@ const ModalPicker = (props) => {
         props.setData(option);
     }
 
-    const option = OPTIONS.map((item, index) => {
+    const option = props.OPTIONS.map((item, index) => {
         return (
             <TouchableOpacity
                 style={styles.option}

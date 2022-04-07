@@ -6,6 +6,7 @@ const ModalPickerScreen = () => {
     const [chooseData, setChooseData] = useState('Select item...')
     const [isModalVisible, setIsModalVisible] = useState(false)
 
+    const OPTIONS = ['red', 'blue', 'yellow', 'green', 'orange', 'white', 'purple']
     const changeModalVisibility = (bool) =>{
         setIsModalVisible(bool)
     }
@@ -29,6 +30,7 @@ const ModalPickerScreen = () => {
                 <ModalPicker 
                     changeModalVisibility={changeModalVisibility} 
                     setData={setData}
+                    OPTIONS={OPTIONS}
                 />
             </Modal>
         </SafeAreaView>
