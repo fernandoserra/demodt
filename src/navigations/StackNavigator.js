@@ -19,6 +19,7 @@ import ReduxScreen2 from "../screens/ReduxSreen2";
 import MenuTabsScreen from "../screens/MenuTabsScreen";
 import TabsScreen from "../screens/TabsScreen";
 import TabsViewScreen from "../screens/TabsViewScreen";
+import ModalPickerScreen from "../screens/ModalPicker/ModalPickerScreen";
 
 const Stack = createStackNavigator();
 
@@ -188,6 +189,14 @@ const TabsViewNavigator = () => {
   );
 }
 
+const ModalPickerNavigator = () => {
+  return (
+    <Stack.Navigator screenOptions={screenOptionStyle}>
+      <Stack.Screen name="ModalPicker" component={ModalPickerScreen} />
+    </Stack.Navigator>
+  );
+}
+
 export {
   LoginStackNavigator,
   MainStackNavigator,
@@ -203,5 +212,6 @@ export {
   Redux2Navigator,
   MenuTabNavigator,
   TabsNavigator,
-  TabsViewNavigator
+  TabsViewNavigator,
+  ModalPickerNavigator
 };
