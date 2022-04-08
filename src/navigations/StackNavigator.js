@@ -222,5 +222,6 @@ export {
   MenuTabNavigator,
   TabsNavigator,
   TabsViewNavigator,
-  ModalPickerNavigator
+  ModalPickerNavigator,
+  FormNavigator
 };
