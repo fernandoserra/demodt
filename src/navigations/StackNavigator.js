@@ -20,6 +20,7 @@ import MenuTabsScreen from "../screens/MenuTabsScreen";
 import TabsScreen from "../screens/TabsScreen";
 import TabsViewScreen from "../screens/TabsViewScreen";
 import ModalPickerScreen from "../screens/ModalPicker/ModalPickerScreen";
+import FormScreen from "../screens/FormScreen";
 
 const Stack = createStackNavigator();
 
@@ -193,6 +194,14 @@ const ModalPickerNavigator = () => {
   return (
     <Stack.Navigator screenOptions={screenOptionStyle}>
       <Stack.Screen name="ModalPicker" component={ModalPickerScreen} />
+    </Stack.Navigator>
+  );
+}
+
+const FormNavigator = () => {
+  return (
+    <Stack.Navigator screenOptions={screenOptionStyle}>
+      <Stack.Screen name="Form" component={FormScreen} />
     </Stack.Navigator>
   );
 }
