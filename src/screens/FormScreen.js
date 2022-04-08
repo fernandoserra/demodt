@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { StyleSheet, Text, View, TextInput, Button, Alert } from 'react-native'
 
+//document -> https://www.npmjs.com/package/yup
 import * as Yup from 'yup'
 
 const FormScreen = () => {
