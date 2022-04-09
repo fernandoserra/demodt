@@ -4,11 +4,18 @@ import { StyleSheet, Text, View, TextInput, Button, Alert } from 'react-native'
 //document -> https://www.npmjs.com/package/yup
 import * as Yup from 'yup'
 
+import DatePicker from 'react-native-date-picker'
+
 const FormScreen = () => {
 
   const [name, setName] = useState('')
   const [lastName, setLastName] = useState('')
   const [email, setEmail] = useState('')
+
+
+  //const [date, setDate] = useState(new Date())
+  const [date, setDate] = useState(new Date())
+  const [open, setOpen] = useState(false)
 
   const handleSendForm = async () => {
     console.log("Ejecutando handleSendForm")
@@ -20,7 +27,7 @@ const FormScreen = () => {
         name: Yup.string().required('El nombre es obligatorio')
       })
 
-      await shema.validate({ email,lastName, name })
+      await shema.validate({ email, lastName, name })
     } catch (error) {
       if (error instanceof Yup.ValidationError) {
         Alert.alert(error.message)
@@ -51,6 +58,24 @@ const FormScreen = () => {
         value={email}
         onChangeText={setEmail}
         style={styles.containerInput} />
+
+      <DatePicker date={date} onDateChange={setDate} />
+
+      <>
+        <Button title="Open" onPress={() => setOpen(true)} />
+        <DatePicker
+          modal
+          open={open}
+          date={date}
+          onConfirm={(date) => {
+            setOpen(false)
+            setDate(date)
+          }}
+          onCancel={() => {
+            setOpen(false)
+          }}
+        />
+      </>
 
       <Button title="Enviar" onPress={handleSendForm} />
     </View>
