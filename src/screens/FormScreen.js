@@ -6,6 +6,8 @@ import * as Yup from 'yup'
 
 import DatePicker from 'react-native-date-picker'
 
+import { mask, MaskedText, MaskedTextInput } from "react-native-mask-text";
+
 const FormScreen = () => {
 
   const [name, setName] = useState('')
@@ -40,6 +42,46 @@ const FormScreen = () => {
 
   return (
     <View style={{ flex: 1, alignContent: 'center', justifyContent: 'center' }}>
+
+      <MaskedText mask="99/99/9999">30081990</MaskedText>
+
+      <MaskedTextInput
+        type="currency"
+        options={{
+          prefix: '',
+          decimalSeparator: '.',
+          groupSeparator: ',',
+          precision: 2
+        }}
+        onChangeText={(text, rawText) => {
+          console.log(text);
+          console.log(rawText);
+        }}
+        style={{ borderWidth: 2, borderBottomColor: '#003366' }}
+        keyboardType="numeric"
+      />
+
+      <MaskedText
+        type="currency"
+        options={{
+          prefix: '$',
+          decimalSeparator: '.',
+          groupSeparator: ',',
+          precision: 2
+        }}
+      >
+        5999
+      </MaskedText>
+
+      <MaskedTextInput
+        mask="99.999.999-9"
+        onChangeText={(text, rawText) => {
+          console.log(text);
+          console.log(rawText);
+        }}
+        style={{borderBottomColor:'red', borderBottomWidth:2}}
+      />
+
       <TextInput
         placeholder='Name'
         value={name}
@@ -69,7 +111,7 @@ const FormScreen = () => {
           date={date}
           onConfirm={(date) => {
             setOpen(false)
-           
+
 
             setDate(date)
             console.log(date)
