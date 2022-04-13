@@ -69,7 +69,10 @@ const FormScreen = () => {
           date={date}
           onConfirm={(date) => {
             setOpen(false)
+           
+
             setDate(date)
+            console.log(date)
           }}
           onCancel={() => {
             setOpen(false)
