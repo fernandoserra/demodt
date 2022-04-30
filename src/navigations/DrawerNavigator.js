@@ -6,7 +6,7 @@ import { AnimationStackNavigator } from "./StackNavigator";
 import { DemoHeaderStackNavigator } from "./StackNavigator";
 import { VideoStackNavigator } from "./StackNavigator";
 import { TabsViewNavigator } from "./StackNavigator";
-import { BdStackNavigator, TrackPlayerNavigator, GraficoNavigator, SVGNavigator, Redux1Navigator, Redux2Navigator,MenuTabNavigator,TabsNavigator, ModalPickerNavigator,FormNavigator } from "./StackNavigator";
+import { BdStackNavigator, TrackPlayerNavigator, GraficoNavigator, SVGNavigator, Redux1Navigator, Redux2Navigator,MenuTabNavigator,TabsNavigator, ModalPickerNavigator,FormNavigator, Video2StackNavigator } from "./StackNavigator";
 import TabNavigator from "./TabNavigator";
 import strings from "../values/strings";
 import CustomDrawer from "../components/CustomDrawer";
@@ -26,6 +26,7 @@ const DrawerNavigator = () => {
             <Drawer.Screen name={strings.ANIMATION} component={AnimationStackNavigator} />
             <Drawer.Screen name="DemoHeaderStackNavigator" component={DemoHeaderStackNavigator} />
             <Drawer.Screen name={strings.VIDEO} component={VideoStackNavigator} />
+            <Drawer.Screen name="Video2" component={Video2StackNavigator} />
             <Drawer.Screen name={strings.BD} component={BdStackNavigator} />
             <Drawer.Screen name="TrackPlayer" component={TrackPlayerNavigator} />
             <Drawer.Screen name="Grafico" component={GraficoNavigator} />
