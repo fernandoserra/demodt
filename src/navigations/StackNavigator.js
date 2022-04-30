@@ -21,6 +21,7 @@ import TabsScreen from "../screens/TabsScreen";
 import TabsViewScreen from "../screens/TabsViewScreen";
 import ModalPickerScreen from "../screens/ModalPicker/ModalPickerScreen";
 import FormScreen from "../screens/FormScreen";
+import Video2Screen from "../screens/Video2Screen";
 
 const Stack = createStackNavigator();
 
@@ -115,6 +116,14 @@ const VideoStackNavigator = () => {
   return (
     <Stack.Navigator screenOptions={screenOptionStyle}>
       <Stack.Screen name="VideoScreen" component={VideoScreen} />
+    </Stack.Navigator>
+  );
+}
+
+const Video2StackNavigator = () => {
+  return (
+    <Stack.Navigator screenOptions={screenOptionStyle}>
+      <Stack.Screen name="Video2Screen" component={Video2Screen} />
     </Stack.Navigator>
   );
 }
@@ -223,5 +232,6 @@ export {
   TabsNavigator,
   TabsViewNavigator,
   ModalPickerNavigator,
-  FormNavigator
+  FormNavigator,
+  Video2StackNavigator
 };
